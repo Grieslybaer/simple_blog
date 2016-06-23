@@ -3,6 +3,6 @@
     <%= comment.content %>
   </div>
   <div class="panel-footer">
-    <%= comment.created_at %>
+    <%= comment.created_at.strftime("Created on %m/%d/%Y") %>
   </div>
 </div>
