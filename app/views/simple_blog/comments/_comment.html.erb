@@ -1,1 +1,8 @@
-<%= comment_counter + 1 %>. <%= comment.content %>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <%= comment.content %>
+  </div>
+  <div class="panel-footer">
+    <%= comment.created_at %>
+  </div>
+</div>

@@ -3,9 +3,9 @@ require_dependency "simple_blog/application_controller"
 module SimpleBlog
   class CommentsController < ApplicationController
     def create
-      @article = Article.find(params[:arctile_id])
+      @article = Article.find(params[:article_id])
       @comment = @article.comments.create(comment_params)
-      redirect_to articles_path
+      redirect_to @article
     end
 
     private

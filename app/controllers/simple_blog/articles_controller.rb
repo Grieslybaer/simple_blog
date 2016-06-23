@@ -11,7 +11,6 @@ module SimpleBlog
 
     # GET /articles/1
     def show
-      @comment = @article.comments.build
     end
 
     # GET /articles/new
